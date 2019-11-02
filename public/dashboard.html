@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up</title>
+    <title>Toolkit</title>
     <link rel="stylesheet" href="styles.css">
     <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjWfn9P5OPHhlEuRn5oSXKNYVs-h1c1Ag&libraries=places"></script>
+    <script defer src= "https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -30,23 +31,35 @@
 
         <div class="content"> 
             <div class="general-info">
-                <div class="status">Current weather</div>
+                <div class="status" data-status>Current weather</div>
                 <div class="emergency-alerts">Emergency alert</div>
             </div>
         </div>
 
         <div class="forecasts">
             <div class="detail">
-                <div class="title">Wind</div>
-                <div class="value">value</div>
+                <div class="title"> Wind</div>
+                <div class="value"data-wind>...</div>
             </div>
             <div class="detail">
                     <div class="title">Temperature</div>
-                    <div class="value">value</div>
+                    <div class="value" data-temperature>...</div>
                 </div>
              <div class="detail">
                 <div class="title">Precipitation</div>
-                <div class="value">value</div>
+                <div class="value" data-precipitation>...</div>
+            </div>
+            <div class="detail">
+                    <div class="title">Humidty</div>
+                    <div class="value" data-humidity>...</div>
+            </div>
+            <div class="detail">
+                    <div class="title">Dew</div>
+                    <div class="value" data-dew>...</div>
+            </div>
+            <div class="detail">
+                    <div class="title">Wing Bearing</div>
+                    <div class="value"data-bearing>...</div>
             </div>
         </div>
     </div>
