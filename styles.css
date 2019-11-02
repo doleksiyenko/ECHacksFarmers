@@ -15,14 +15,24 @@ ul{
 
 ul.navbar{
     display: inline-flex;
-    margin:5px;
+    margin:10px;
+}
+.sign{
+    display:inline-flex;
+    margin-left:15px;
 }
 
-ul.navbar button{
-    border:none;
-    background:none;
-    color:white;
+
+.navbutton{
+    border: none;
+    color: white;
+    text-align: center;
+    opacity: 0.6;
+    transition: 0.3s;
+    cursor: pointer;
 }
+
+.navbutton:hover {opacity: 1;}
 
 li{
     margin-right: 5px;
