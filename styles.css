@@ -1,10 +1,29 @@
-body{
-    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-header nav{
-    background-color: rgb(0, 116, 35);
+body{
+    font-family: Helvetica Neue, Arial, Helvetica, sans-serif;
+    margin:0px;
+    padding:0px;
+}
+
+.zoompic{
+    position: relative;
+    top: -50px;
+    z-index: -1;
+}
+
+header{
+    background-color:none;
+    background-size: 100%;
+    padding: 0px;
+    margin:0px;
     color: white;
+    background-position: center;
+    text-align: center;
+    position: relative;
 }
 
 ul{
@@ -16,23 +35,23 @@ ul{
 ul.navbar{
     display: inline-flex;
     margin:10px;
-}
-.sign{
-    display:inline-flex;
-    margin-left:15px;
+    
 }
 
 
+nav{
+    background-color: rgba(0, 0, 0, 0.7);
+}
 .navbutton{
     border: none;
     color: white;
     text-align: center;
-    opacity: 0.6;
+    opacity: 1;
     transition: 0.3s;
     cursor: pointer;
 }
 
-.navbutton:hover {opacity: 1;}
+.navbutton:hover {opacity: 0.7;}
 
 li{
     margin-right: 5px;
