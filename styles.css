@@ -9,21 +9,48 @@ body{
     padding:0px;
 }
 
-.zoompic{
+.inner{
     position: relative;
-    top: -50px;
+    height: auto;
+}
+
+.zoompic img{
+    position: absolute;
+    top: 0px;
     z-index: -1;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.main_text{
+    color: white;
+    font-size: 48px;
+    text-align: center; 
+}
+
+
+.main_text h2{
+    padding-bottom: 200px;
+    font-size: 38px;
+}
+
+.main_text li{
+    list-style-type: none;
+    margin-top: 50px;
+    padding:10px
 }
 
 header{
     background-color:none;
     background-size: 100%;
+    width: 100%;
     padding: 0px;
     margin:0px;
     color: white;
     background-position: center;
     text-align: center;
-    position: relative;
+    position: fixed;
 }
 
 ul{
@@ -56,3 +83,4 @@ nav{
 li{
     margin-right: 5px;
 }
+
