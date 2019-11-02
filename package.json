@@ -1,0 +1,19 @@
+{
+  "name": "echacksfarmers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doleksiyenko/ECHacksFarmers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doleksiyenko/ECHacksFarmers/issues"
+  },
+  "homepage": "https://github.com/doleksiyenko/ECHacksFarmers#readme"
+}
