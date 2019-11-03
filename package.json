@@ -1,7 +1,6 @@
 {
   "name": "echacksfarmers",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "devStart": "nodemon server.js"
@@ -23,5 +22,6 @@
   "devDependencies": {
     "dotenv": "^8.2.0",
     "nodemon": "^1.19.4"
-  }
+  },
+  "description": ""
 }
