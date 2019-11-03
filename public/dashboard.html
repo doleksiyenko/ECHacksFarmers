@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Toolkit</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="weather_design.css">
     <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjWfn9P5OPHhlEuRn5oSXKNYVs-h1c1Ag&libraries=places"></script>
     <script defer src= "https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js"></script>
     <script defer src="script.js"></script>
 </head>
-<body>
+<body class="weather_design">
     <header>
         <nav>
                 <ul class="navbar">
@@ -20,47 +20,48 @@
     </header>
 
     <div class="container">
-        <div class="header">
-            <div class="icon-container">
-                <canvas id="icon" width="100" height="100"></canvas>
-            </div>
+        <div class="header-two">
             <div class="city-search-container">
                     <input type="text" class="city-search" data-city-search placeholder="Specify Location">
+            </div>
+            <div class="icon-container">
+                    <canvas id="icon" width="50" height="50"></canvas>
             </div>
         </div>
 
         <div class="content"> 
             <div class="general-info">
-                <div class="status" data-status>Current weather</div>
-                <div class="emergency-alerts">Emergency alert</div>
+                <div class="status" data-status>Current Weather</div>
             </div>
         </div>
 
         <div class="forecasts">
-            <div class="detail">
-                <div class="title"> Wind</div>
-                <div class="value"data-wind>...</div>
-            </div>
-            <div class="detail">
-                    <div class="title">Temperature</div>
-                    <div class="value" data-temperature>...</div>
+            <ul class="weather_points">
+                <div class="detail">
+                    <div class="title"> Wind (km/h)</div>
+                    <div class="value"data-wind>...</div>
                 </div>
-             <div class="detail">
-                <div class="title">Precipitation</div>
-                <div class="value" data-precipitation>...</div>
-            </div>
-            <div class="detail">
-                    <div class="title">Humidty</div>
-                    <div class="value" data-humidity>...</div>
-            </div>
-            <div class="detail">
-                    <div class="title">Dew</div>
-                    <div class="value" data-dew>...</div>
-            </div>
-            <div class="detail">
-                    <div class="title">Wing Bearing</div>
-                    <div class="value"data-bearing>...</div>
-            </div>
+                <div class="detail">
+                        <div class="title">Temperature (C/F)</div>
+                        <div class="value" data-temperature>...</div>
+                    </div>
+                <div class="detail">
+                    <div class="title">Precipitation (%)</div>
+                    <div class="value" data-precipitation>...</div>
+                </div>
+                <div class="detail">
+                        <div class="title">Humidty (%)</div>
+                        <div class="value" data-humidity>...</div>
+                </div>
+                <div class="detail">
+                        <div class="title">Dew Point (C/F)</div>
+                        <div class="value" data-dew>...</div>
+                </div>
+                <div class="detail">
+                        <div class="title">Wing Bearing (degree)</div>
+                        <div class="value"data-bearing>...</div>
+                </div>
+            </ul>
         </div>
     </div>
     <a href="https://darksky.net/poweredby" class="darksky-logo">Powered by DarkSky</a>
