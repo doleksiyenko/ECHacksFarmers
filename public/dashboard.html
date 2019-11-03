@@ -9,6 +9,8 @@
     <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjWfn9P5OPHhlEuRn5oSXKNYVs-h1c1Ag&libraries=places"></script>
     <script defer src= "https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js"></script>
     <script defer src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.2/dist/Chart.min.js"></script>
 </head>
 <body class="weather_design">
     <header>
@@ -58,11 +60,33 @@
                         <div class="value" data-dew>...</div>
                 </div>
                 <div class="detail">
-                        <div class="title">Wing Bearing (degree)</div>
+                        <div class="title">Wind Bearing (degrees)</div>
                         <div class="value"data-bearing>...</div>
                 </div>
             </ul>
+
         </div>
+        <div class="charts">
+            <h1>Price Charts</h1>
+            <canvas id="wheat-price" width="400" height="175"></canvas>
+            <ul class="button_layout">
+                <input type="button" value="Eggs" id="0" onclick="change_data(this.id)">
+                <input type="button" value="Bread" id="1" onclick="change_data(this.id)">
+                <input type="button" value="Flour" id="2" onclick="change_data(this.id)">
+                <input type="button" value="Cornflakes" id="3" onclick="change_data(this.id)">
+                <input type="button" value="Apples" id="4" onclick="change_data(this.id)"> 
+                <input type="button" value="Bananas" id="5" onclick="change_data(this.id)">
+                <input type="button" value="Chickens" id="6" onclick="change_data(this.id)"> 
+            </ul>
+            <script src="timechart.js"></script>
+        </div>
+
+        <div class="popularity">
+            <div class="head">
+                <h2>Popularity</h2>
+            </div>
+        </div>
+
     </div>
     <a href="https://darksky.net/poweredby" class="darksky-logo">Powered by DarkSky</a>
 </body>
