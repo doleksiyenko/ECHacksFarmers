@@ -20,7 +20,7 @@ searchBox.addListener('places_changed', () => {
   })
 })
 
-const icon = new Skycons({color: '#222'})
+const icon = new Skycons({color: '#ffffff'})
 const locationElement = document.querySelector('[data-status]')
 const windElement = document.querySelector('[data-wind]')
 const humidityElement = document.querySelector('[data-humidity]')
@@ -34,8 +34,9 @@ function setWeatherData(data, place) {
   temperatureElement.textContent = data.temperature
   windElement.textContent = data.windSpeed
   bearingElement.textContent = data.windBearing
+  humidityElement.textContent = (data.humidity)*100
   dewElement.textContent = data.dewPoint
-  precipitationElement.textContent = data.precipProbability
+  precipitationElement.textContent = (data.precipProbability)*100
   icon.set('icon', data.icon)
   icon.play()
 }
